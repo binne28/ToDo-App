@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    /* background-color: purple; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    overflow: visible;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+    /* margin-left: 1347px; */
+    
+}
+
+.user-menu i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.user-menu:hover .dropdown-content {
+    display: block;
+    top: 100%; /* Ensure dropdown appears below the navbar */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    color: black;
+}
+
+.login-form input {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px;
+    /* background-color: purple; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: darkmagenta;
+}
+
+
+.color{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.d-none{
+    display: none;
+}
