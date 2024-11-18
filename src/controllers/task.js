@@ -1,7 +1,7 @@
 const db = require('../config/database');
 const session = require('express-session');
 const  {postDelete} = require('../services/CRUD')
-const listTask = async(req, res)=>{
+const createTask = async(req, res)=>{
     const dbConnect = await db;
     const userID = req.session.user.userID;
     console.log(userID);
@@ -35,7 +35,7 @@ const postDeleted = async(req, res)=>{
 
 
 module.exports = {
-    listTask,
+    createTask,
     postUpdate,
     postDeleted
 }
