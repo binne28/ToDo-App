@@ -9,7 +9,9 @@ const postRegister = async (req, res, next)=>{
     let passwordHansh = bcrypt.hashSync(password, salt);
 
     let findUser = `select * from user_rool where username = ?`;
+    let findUsers = User.findOne({username});
     let findEmail = `select * from user_rool where email = ?`;
+    let findEmail = User.findOne({email});
 
     let user_inf = {username: username, email: email, password: passwordHansh};
 
